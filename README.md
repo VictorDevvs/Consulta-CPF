@@ -22,13 +22,15 @@ evitando chamadas desnecessárias à API externa. 🚀
 # 📡 Endpoints disponíveis
 GET /validator/cpf?cpf=12345678900
 
-Exemplo de resposta (CPF válido)
+### Exemplo de resposta (CPF válido)
+```json
 {
   "valid": true,
   "formatted": "123.456.789-00"
 }
-
-Exemplo de resposta (CPF inválido)
+```
+### Exemplo de resposta (CPF inválido):
+```json
 {
   "title": "CPF inválido",
   "message": "Por favor, verifique se o CPF foi digitado corretamente!",
@@ -36,3 +38,4 @@ Exemplo de resposta (CPF inválido)
   "valid": false,
   "timestamp": "2025-08-31T10:15:30"
 }
+```
